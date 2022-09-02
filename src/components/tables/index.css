@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap");
+.tableHeader {
+    z-index: 100;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* margin: 0 auto; */
+    border-radius: 12px 12px 0 0;
+    padding: 12px 43px;
+}
+.table_dashboard {
+    margin-top: 25px;
+    border: none;
+}
+.table_dashboard .tableInside {
+    border: 1px solid #fff;
+    padding: 20px !important;
+}
+
+.table_dashboard th,
+td {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+
+    color: #000000;
+}
+.tableData {
+    flex-basis: 55%;
+    width: 55%;
+    margin-left: 12px;
+}
+.tableBtn .sort {
+    padding-right: 30px;
+}
+.tableMain {
+    z-index: 1000;
+    background: #fff;
+    border-radius: 0 0 12px 12px;
+    height: auto;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 12px;
+}
+h2 {
+    font-family: Mulish;
+    margin-left: 49px;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: #252733;
+}
+
+th.tableInside {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #9fa2b4;
+}
+.td.tableInside {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 20px 0px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #252733;
+}
+tbody td {
+    border-bottom: 2px solid #9fa2b4;
+}
+.container {
+    margin: 250px auto;
+
+    position: relative;
+}
+.btn-danger{
+    background-color: #9B2226;
+}
+.btn:focus, .btn:active, .btn-close:active, .btn-close:focus
+{
+    box-shadow: 0 0 0 0.20rem rgb(0, 0, 0, 0.9);
+}
+#user-management-grid>thead > tr > th > button
+{
+    background-color: transparent;
+    border: none;
+}
+#user-management-grid>thead > tr > th > button > span
+{
+    margin-left: 5px;
+}
