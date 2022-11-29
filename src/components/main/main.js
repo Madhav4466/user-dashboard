@@ -1,8 +1,8 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Container} from "react-bootstrap";
 import Announcement from "../announcement/announcement";
-import ModalDialog from "../modal/modal";
-import Grid from "../tables/Grid.jsx";
+import LeftPanel from "../left-panel/left-panel";
+
 
 export default class Main extends React.Component {
     constructor(props) {
@@ -16,7 +16,7 @@ export default class Main extends React.Component {
     }
     componentDidMount = () =>
     {
-        document.querySelectorAll("#ui-dashboard > div > div > div.modal-body > div > button")[0].focus();
+        //document.querySelectorAll("#ui-dashboard > div > div > div.modal-body > div > button")[0].focus();
     }
 
     handleDisplay = (value) => 
@@ -50,56 +50,7 @@ export default class Main extends React.Component {
             <main id="main">
                 <Announcement announce={this.state.announcementText}/>
                 <Container fluid>
-                    <Row lg={12} className="d-flex justify-content-center">
-                        <Col lg={4} md={4} sm={12}>
-                            <ModalDialog
-                                id="ui-dashboard"
-                                display={"block"}
-                                modalTitle={
-                                    <h2
-                                        id="dashboard-title"
-                                        className="modal-title h4"
-                                        style={{
-                                            fontSize: "30px",
-                                            marginLeft: "0px",
-                                        }}
-                                    >
-                                        Welcome to User Management
-                                    </h2>
-                                }
-                                showClose={false}
-                                size="md"
-                                titleId={"dashboard-title"}
-                                modalBody={
-                                    <div style={{ padding: "0rem 2rem 2rem" }}>
-                                        <Button
-                                            variant="outline-primary"
-                                            onClick={this.handleDashboarButtonClick}
-                                        >
-                                            User Management
-                                        </Button>
-                                    </div>
-                                }
-                            />
-                        </Col>
-                    </Row>
-                    <ModalDialog
-                        changeDisplay={this.handleDisplay}
-                        id="gridContainerModal"
-                        display={this.state.modalDisplay}
-                        modalBody={<Grid onUpdate={this.handleAnnounce}/>}
-                        showClose={true}
-                        size={"xl"}
-                        titleId={"grid-modal-title"}
-                        modalTitle={
-                            <h2
-                                className="modal-title h4"
-                                id="grid-modal-title"
-                            >
-                                User Management
-                            </h2>
-                        }
-                    />
+                    <LeftPanel></LeftPanel>
                 </Container>
             </main>
         );

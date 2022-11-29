@@ -6,11 +6,10 @@ export default class LeftPanel extends React.Component
     render()
     {
         return(
-            <div class='container left-panel-container'>
-                <Row lg={4} className="d-flex justify-content-center">
-                    <Col lg={12} md={12} sm={12}></Col>
-                    <Col lg={12} md={12} sm={12}></Col>
-                    <Col lg={12} md={12} sm={12}></Col>
+            <div class='left-panel-container'>
+                <Row lg={4} className="vh-100">
+                    <Col lg={2} md={2} sm={2}>
+                    </Col>
                 </Row>
             </div>
         );
