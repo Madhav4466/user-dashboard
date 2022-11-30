@@ -1,5 +1,5 @@
 import React from "react";
-import { Container} from "react-bootstrap";
+import { Col, Container, Row} from "react-bootstrap";
 import Announcement from "../announcement/announcement";
 import LeftPanel from "../left-panel/left-panel";
 
@@ -48,9 +48,16 @@ export default class Main extends React.Component {
     render() {
         return (
             <main id="main">
-                <Announcement announce={this.state.announcementText}/>
                 <Container fluid>
-                    <LeftPanel></LeftPanel>
+                    <Announcement announce={this.state.announcementText}/>
+                    <Row lg={12} className="content">
+                        <Col lg={2}>
+                            <LeftPanel></LeftPanel>
+                        </Col>
+                        <Col lg={10}>
+                        </Col>
+                    </Row>
+                    
                 </Container>
             </main>
         );
