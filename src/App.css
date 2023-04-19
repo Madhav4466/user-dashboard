@@ -1,11 +1,11 @@
 body
 {
     background-color: #393939;
-    background-image: url("../src/media/user_dashboard_4x (1).jpg");
+    /*background-image: url("../src/media/user_dashboard_4x (1).jpg");*/
 }
 .card
 {
-    box-shadow: 0px 0px 20px 15px;
+    /*box-shadow: 0px 0px 20px 15px;*/
 }
 .App {
   text-align: center;

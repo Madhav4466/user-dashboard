@@ -1,5 +1,6 @@
 import React from "react";
-import Main from "../components/main/main";
+import Header from "../components/header/header";
+import Login from "./login";
 
 export default class IndexPage extends React.Component {
     constructor(props) {
@@ -13,7 +14,16 @@ export default class IndexPage extends React.Component {
     modal() {
         this.setState({ showUser: !this.state.modal });
     }
-    render() {
-        return <>{this.state.showUser && <Main isClosed={this.modal} />}</>;
+    render() 
+    {
+        return(
+            <>
+                <Header/>
+                {
+                //this.state.showUser && <Main isClosed={this.modal} /*>
+                }
+                <Login/>
+            </>
+        );
     }
 }

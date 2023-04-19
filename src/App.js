@@ -1,7 +1,8 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
-import IndexPage from "./pages";
+import IndexPage from "./pages/index-page";
 import "./assets/stylesheets/index.sass";
+import 'bootstrap/dist/js/bootstrap.bundle'
 
 function App() {
     return (

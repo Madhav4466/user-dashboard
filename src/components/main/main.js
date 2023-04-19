@@ -1,8 +1,5 @@
 import React from "react";
-import { Col, Container, Row} from "react-bootstrap";
-import Announcement from "../announcement/announcement";
-import LeftPanel from "../left-panel/left-panel";
-
+import { Container, Row} from "react-bootstrap";
 
 export default class Main extends React.Component {
     constructor(props) {
@@ -49,15 +46,9 @@ export default class Main extends React.Component {
         return (
             <main id="main">
                 <Container fluid>
-                    <Announcement announce={this.state.announcementText}/>
                     <Row lg={12} className="content">
-                        <Col lg={2}>
-                            <LeftPanel></LeftPanel>
-                        </Col>
-                        <Col lg={10}>
-                        </Col>
+                        
                     </Row>
-                    
                 </Container>
             </main>
         );
